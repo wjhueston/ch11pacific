@@ -1,0 +1,80 @@
+/*Pacfic Trails Resort Style Sheet*/
+*{box-sizing: border-box}
+header, main, nav, footer, figure, figcaption, aside, section, article {display: block;}
+body{background-color: #B8DBED;
+    color: #666666; font-family: Arial, Helvetica, sans-serif}
+header{
+    background-color: black;
+    color: #FFFFFF;
+    height: 120px; text-align:center; padding-top: 30px; padding-left: 3em}
+
+nav{font-weight: bold;  padding: 1.5em; font-size:120%; float: left; width: 160px; }
+nav a{text-decoration: none; transition: ease-out 3s;}
+nav ul{list-style-type: none; margin: 0; padding-left: 0; font-size: 1.2em}
+nav a:link{color: #5C7FA3}
+nav a:visited{color: #344873}
+nav a:hover{color: #A52A2A}
+
+main{padding-top: 1px; padding-right: 20px; padding-bottom: 20px; padding-left: 30px;display: block; background-color: white; margin-left: 190px}
+h1{margin-bottom: 0; margin-top: 0px;
+    font-family: Georgia, "Times New Roman", serif; font-size: 3em; letter-spacing: .25em}
+h2{color:#3399CC; font-family: Georgia, "Times New Roman", serif; text-shadow: 1px 1px 1px}
+h3{font-family: Georgia, "Times New Roman", serif; color: #000033}
+main ul{list-style-image: url("../images/marker.gif")}
+dt{color:#000033}
+footer{padding: 20px; font-size: 75%; font-style: italic; text-align: center; font-family: Georgia, "Times New Roman", serif;  background-color: white; clear: both}
+.resort{color:#5C73AF; font-weight: bold}
+#contact{font-size:90%}
+#wrapper{width:80%; margin-right: auto; margin-left: auto; background-color:#90C7E3; min-width: 960px; max-width: 2048px; box-shadow: 3px 3px 3px #333333; border: 1px; border-color: #000033; border-style: solid; background: linear-gradient(0deg, rgba(144,199,227,1) 0%, rgba(255,255,255,1) 100%);}
+#homehero{height: 300px; background-image: url("../images/coast2.jpg") ; background-size: 100% 100%; margin-left: 190px;}
+#yurthero{height: 300px; background-image: url("../images/yurt.jpg"); background-size: 100% 100%;margin-left: 190px;  }
+#trailhero{height: 300px; background-image: url("../images/trail.jpg"); background-size: 100% 100%;margin-left: 190px;}
+#privacyhero{height: 300px; background-image: url(http://jhay.info/privacy-policy.jpg); background-size: 100% 100%;margin-left: 190px;}
+#mobile{display: none;}
+#desktop{display: inline;}
+table{border: 2px solid #3399CC; border-collapse: collapse;}
+th{padding: 0.5em; border: 2px solid #3399CC;}
+td{padding: 0.5em; border: 2px solid #3399CC; text-align: center;}
+.text{text-align: left}
+tr:nth-of-type(even){background-color: #F5FAFC}
+label{float: left; display: block; text-align: right; width: 120px; padding-right: 10px}
+input, textarea{display: block; margin-bottom: 20px;}
+input[type=submit]{margin-left: 130px}
+video, embed{float: right; padding-left: 20px}
+#gallery{position: relative; height: 200px; text-align: left; color: black}
+#gallery ul{list-style-type: none; width: 300px}
+#gallery li{display: inline; float: left; padding: 10px}
+#gallery img{border-style: none}
+#gallery a{text-decoration: none; font-style: italic; color: black;}
+#gallery span{position: absolute; left: -1000px; opacity: 0; transition: opacity 1s ease-in-out}
+#gallery a:hover span{position: absolute; top: 16px; left: 320px; text-align: center;
+    opacity: 1;}
+figure{position: absolute; left: 280px; text-align: center }
+/** Tablet View**/
+@media only screen and (max-width: 64em)
+{label{float: none; text-align: left;}
+ input[type=submit]{margin-left: 0}
+ body{margin: 0; background-color: white}
+ #wrapper{min-width: 0; width: auto; box-shadow: none; border: none;}
+ header{padding-top: 0.5em; padding-bottom: 0.5em; padding-left: 0; height: auto;}
+ h1{letter-spacing: 0.1em;}
+ main{margin-left: 0;}
+ nav{float: none; width: auto; text-align: center; padding: 0.5em;}
+ nav li{display: inline; padding-top: 0.25em; padding-bottom: 0.25em;padding-left: 0.75em; padding-right: 0.75em;}
+ #homehero, #yurthero, #trailhero, #privacyhero{margin-left: 0; height: 200px}
+ footer{margin-left: 0;}
+}
+/**Smartphone View**/
+@media only screen and (max-width: 37.5em){
+    main{padding-top: 0.1em; padding-bottom: 0.1em; padding-right: 1em; padding-left: 1em; font-size: 90%;}
+
+    h1{font-size: 2em;}
+    nav{padding: 0;}
+    nav li{display: block; margin: 0; border-bottom: 2px solid #330000;}
+    nav a{display: block;}
+    #homehero, #yurthero, #trailhero, #privacyhero{background-image: none; height: 0;}
+    #mobile{display: inline;}
+    #desktop{display: none;}
+    #gallery{display: none;}
+}
+#notice{link: h2;}
